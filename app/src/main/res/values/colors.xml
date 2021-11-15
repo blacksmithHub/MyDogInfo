@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBreed">#1613b9</color>
+    <color name="colorBreedSelect">#79041d</color>
+    <color name="colorSelectBreed">#100f10</color>
+    <color name="colorListViewBacground">#da0426</color>
+</resources>

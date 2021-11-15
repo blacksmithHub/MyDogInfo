@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.torres.edgar.mydoginfo.MainActivity"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/listViewDog"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_weight="0.84"
+
+        android:background="@android:color/holo_orange_light"
+
+        android:divider="@android:drawable/divider_horizontal_textfield"
+        android:listSelector="@color/colorListViewBacground"
+        android:scrollbars="horizontal" />
+
+
+    <EditText
+        android:id="@+id/editTextDogName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:ems="10"
+        android:hint="Dog Name"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Select Breed: "
+            android:textColor="@color/colorSelectBreed"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerBreed"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Switch
+            android:id="@+id/switchVaccinated"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:text="Change to Vaccinated"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVaccinated"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:text="Not Vaccinated"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:background="@android:drawable/picture_frame"
+            android:text="Add Dog Info"
+            android:textColor="@color/colorBreedSelect" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:background="@android:drawable/picture_frame"
+            android:text="Delete Dog Info"
+            android:textColor="@color/colorBreedSelect" />
+
+    </LinearLayout>
+
+</LinearLayout>
